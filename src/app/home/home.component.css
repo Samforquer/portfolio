@@ -1,0 +1,26 @@
+fa-icon {
+    font-size: 24px;
+    margin-right: 10px;
+    color: darkslategray;
+    transition: color 0.3s;
+  }
+  
+  fa-icon:hover {
+    color: black;
+  }
+
+  #story {
+    text-align: left;
+}
+
+#pic-bio img {
+    max-width: 100%;
+}
+
+#pic-bio p {
+    font-style: italic;
+}
+
+#pic-bio div {
+    margin-top: 1rem;
+}

@@ -1,1 +1,10 @@
 /* You can add global styles to this file, and also import other style files */
+footer {
+    padding: 1rem 0;
+    background-color: #f8f9fa;
+}
+
+a.nav-link.active {
+    color: #ffffff;
+    background-color: #343a40;
+}

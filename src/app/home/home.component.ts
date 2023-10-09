@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons';
+import { faExternalLinkAlt } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-home',
@@ -29,6 +30,7 @@ fetchGithubProfile() {
   );
 }
 
-faLinkedin = faLinkedin;
+  faLinkedin = faLinkedin;
   faGithub = faGithub;
+  faExternalLinkAlt = faExternalLinkAlt;
 }

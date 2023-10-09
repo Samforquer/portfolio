@@ -1,13 +1,27 @@
 <header>
-  <nav>
-      <a routerLink="/home" id="home-link">Home</a>
-      <a routerLink="/projects" id="projects-link">Projects</a>
-      <a routerLink="/contact" id="contact-link">Contact</a>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="#">My Portfolio</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/home" routerLinkActive="active">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/projects" routerLinkActive="active">Projects</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/contact" routerLinkActive="active">Contact</a>
+        </li>
+      </ul>
+    </div>
   </nav>
 </header>
 
 <router-outlet></router-outlet>
 
-<footer>
+<footer class="mt-5 text-center">
   <p>&copy; 2023 Sam Forquer</p>
 </footer>
