@@ -24,3 +24,16 @@ fa-icon {
 #pic-bio div {
     margin-top: 1rem;
 }
+
+.btn-custom {
+  background-color: #343a40; 
+  color: #ecf0f1; 
+  border: none;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+}
+
+.btn-custom:hover {
+  background-color: #34495e; 
+  color: #ecf0f1; 
+}
