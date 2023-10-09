@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
+import { faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons';
 
 @Component({
   selector: 'app-home',
@@ -27,4 +28,7 @@ fetchGithubProfile() {
     }
   );
 }
+
+faLinkedin = faLinkedin;
+  faGithub = faGithub;
 }
