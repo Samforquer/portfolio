@@ -1,3 +1,4 @@
+<div class="d-flex flex-column min-vh-100">
 <header>
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <a class="navbar-brand" href="#">My Portfolio</a>
@@ -20,8 +21,26 @@
   </nav>
 </header>
 
-<router-outlet></router-outlet>
+<div class="container-fluid mb-auto">
+  <router-outlet></router-outlet>
+</div>
 
 <footer class="mt-5 text-center">
-  <p>&copy; 2023 Sam Forquer</p>
+  <div class="container">
+      <div class="row">
+          <div class="col-md-6 text-md-left">
+              <p>&copy; 2023 Sam Forquer</p>
+          </div>
+          <div class="col-md-6 text-md-right">
+              <a href="https://www.linkedin.com/in/samforquer" target="_blank">
+                  <fa-icon [icon]="faLinkedin" class="mr-2"></fa-icon>
+              </a>
+              <a href="https://github.com/Samforquer" target="_blank">
+                  <fa-icon [icon]="faGithub"></fa-icon>
+              </a>
+          </div>
+      </div>
+  </div>
 </footer>
+
+</div>
