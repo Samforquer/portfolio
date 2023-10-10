@@ -8,9 +8,9 @@ import { RouterModule, Routes } from '@angular/router';
 
 const routes: Routes = [
   { path: '', redirectTo: '/home', pathMatch: 'full' },
-  { path: 'home', component: HomeComponent },
-  { path: 'projects', component: ProjectsComponent },
-  { path: 'contact', component: ContactComponent },
+  { path: 'home', component: HomeComponent, /*data: { animation: 'HomePage' }*/ },
+  { path: 'projects', component: ProjectsComponent, data: { animation: 'isLeft' } },
+  { path: 'contact', component: ContactComponent, data: { animation: 'isRight' } },
 ];
 
 @NgModule({

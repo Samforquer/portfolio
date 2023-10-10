@@ -1,46 +1,49 @@
 <div class="d-flex flex-column min-vh-100">
-<header>
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-    <a class="navbar-brand" href="#">My Portfolio</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav">
-        <li class="nav-item">
-          <a class="nav-link" routerLink="/home" routerLinkActive="active">Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" routerLink="/projects" routerLinkActive="active">Projects</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" routerLink="/contact" routerLinkActive="active">Contact</a>
-        </li>
-      </ul>
-    </div>
-  </nav>
-</header>
-
-<div class="container-fluid mb-auto">
-  <router-outlet></router-outlet>
-</div>
-
-<footer class="mt-5 text-center">
-  <div class="container">
-      <div class="row">
-          <div class="col-md-6 text-md-left">
-              <p>&copy; 2023 Sam Forquer</p>
-          </div>
-          <div class="col-md-6 text-md-right">
-              <a href="https://www.linkedin.com/in/samforquer" target="_blank" class="fa-2x icons">
-                  <fa-icon [icon]="faLinkedin" class="mr-2"></fa-icon>
-              </a>
-              <a href="https://github.com/Samforquer" target="_blank" class="fa-2x icons">
-                  <fa-icon [icon]="faGithub"></fa-icon>
-              </a>
-          </div>
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark text-center">
+      <a class="navbar-brand" href="#">Sam Forquer | Developer</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav mx-auto">
+          <li class="nav-item">
+            <a class="nav-link" routerLink="/projects" routerLinkActive="active">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLink="/home" routerLinkActive="active">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLink="/contact" routerLinkActive="active">Contact</a>
+          </li>
+        </ul>
       </div>
-  </div>
-</footer>
+    </nav>
+  </header>
+
+  <main [@routeAnimations]="prepareRoute(outlet)" class="content">
+    <div class="container-fluid mb-auto">
+      <router-outlet #outlet="outlet" [@slideInAnimation]="prepareRoute(outlet)"></router-outlet>
+    </div>
+  </main>
+
+  <footer class="mt-5 text-center">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 text-md-left">
+          <p>&copy; 2023 Sam Forquer</p>
+        </div>
+        <div class="col-md-6 text-md-right">
+          <a href="https://www.linkedin.com/in/samforquer" target="_blank" class="fa-2x icons">
+            <fa-icon [icon]="faLinkedin" class="mr-2"></fa-icon>
+          </a>
+          <a href="https://github.com/Samforquer" target="_blank" class="fa-2x icons">
+            <fa-icon [icon]="faGithub"></fa-icon>
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
 
 </div>

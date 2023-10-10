@@ -5,6 +5,14 @@ html, body {
     font-family: 'Open Sans', sans-serif;
     font-family: 'Roboto', sans-serif;
 }
+html{
+    overflow-y: scroll; /* force scrollbar to remain so items don't shift on page loading.*/
+}
+
+main{
+    position:relative;
+    flex-grow: 1;
+}
 
 a.nav-link.active {
     color: #ffffff;
