@@ -52,7 +52,7 @@ function slideTo(direction: Direction) {
         ], optional),
         query(':enter', [
             style({ [direction]: '-100%'})
-        ]), // above this seems to match example.
+        ]),
         group([
             query(':leave', [
                 animate('600ms ease', style({ [direction]: '100%'}))
