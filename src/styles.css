@@ -12,6 +12,7 @@ html{
 main{
     position:relative;
     flex-grow: 1;
+    background-color: aquamarine;
 }
 
 a.nav-link.active {
