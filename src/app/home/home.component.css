@@ -1,12 +1,12 @@
 fa-icon {
     font-size: 24px;
     margin-right: 10px;
-    color: darkslategray;
+    color: #202e44;
     transition: color 0.3s;
   }
   
   fa-icon:hover {
-    color: black;
+    color: #924835;
   }
 
   #story {
@@ -28,4 +28,8 @@ fa-icon {
 
 .btn{
   margin: 10px;
+}
+
+h2, p{
+  color:#f2f2eb;
 }

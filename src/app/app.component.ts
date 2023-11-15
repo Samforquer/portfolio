@@ -1,17 +1,13 @@
 import { Component } from '@angular/core';
 import { faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons';
-import { //fader,
-           slider } from './route-animations';
+import {  slider } from './route-animations';
 import { RouterOutlet } from '@angular/router';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css'],
   animations:[
-    slider, 
-   // transformer, 
-    //fader//, 
-    //stepper
+    slider
   ]
 })
 export class AppComponent {

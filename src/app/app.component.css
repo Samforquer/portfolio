@@ -10,6 +10,12 @@
 }
 
 .navbar-nav .nav-item .nav-link {
+    color: #f2f2eb;
     font-size: 18px;  /* Adjust this value to make the text bigger or smaller */
     margin: 0 75px;   /* Adjust the left and right margins to space the items out */
 }
+
+p{
+    color: #c7bcab;
+}
+
