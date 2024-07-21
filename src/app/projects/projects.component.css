@@ -1,9 +1,14 @@
 .card{
     min-height: 650px;
-    border-color: #202e44;
+    border-color: #224420;
     border-width: 2px;
     border-radius: 10px;
     background-color: #c7bcab;
 }
 
 
+.gallery-image {
+    height: 300px; /* Set the desired height */
+    width: 100%; /* Ensure the image spans the full width of the column */
+    object-fit: cover; /* Ensures the image covers the area without stretching */
+}

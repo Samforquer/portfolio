@@ -4,7 +4,7 @@ html, body {
     margin: 0;
     font-family: 'Open Sans', sans-serif;
     font-family: 'Roboto', sans-serif;
-    background-color: #202e44;
+    background-color: #204425;
 }
 html{
     overflow-y: scroll; /* force scrollbar to remain so items don't shift on page loading.*/
@@ -52,3 +52,8 @@ a.nav-link.active {
     background-color: #34495e; 
     color: #ecf0f1; 
   }
+
+  
+h3{   
+  color:#f2f2eb;
+}
